@@ -1,0 +1,29 @@
+{
+  "tcp": {
+    "addr": ":1935",
+    "maxQueue": 1000,
+    "workers": 50,
+    "maxConns": 0,
+    "readTimeout": "30s",
+    "writeTimeout": "30s"
+  },
+  "udp": {
+    "addr": ":1936",
+    "maxQueue": 500,
+    "workers": 20,
+    "maxPPS": 10000,
+    "bufferSize": 65507,
+    "readTimeout": "5s"
+  },
+  "srt": {
+    "addr": ":5000",
+    "maxQueue": 1000,
+    "workers": 50,
+    "maxConns": 0,
+    "latency": 120,
+    "passphrase": "",
+    "pbkeylen": 16,
+    "readTimeout": "30s",
+    "writeTimeout": "30s"
+  }
+}
